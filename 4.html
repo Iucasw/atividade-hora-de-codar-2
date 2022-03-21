@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.**/
+      
+        valor1 = parseInt(prompt("Insira um valor"));
+       
+        valor2 = parseInt(prompt("Insira outro valor"));
+        
+        valor3 = parseInt(prompt("Insira outro novamente valor"));
+       
+
+        if (valor2 == valor1) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        }
+
+        else if (valor3 == valor2) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        }
+
+        else if  (valor1 == valor3) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        }
+
+        else if (valor1 > valor3 && valor2 > valor3 ){
+         alert( parseInt(valor1) + parseInt(valor2))
+        }
+        else if (valor1 > valor2 && valor3 > valor2 ){
+         alert( parseInt(valor1) + parseInt(valor3))
+        }
+
+       else if (valor2 > valor1 && valor3 > valor1 ){
+         alert( parseInt(valor2) + parseInt(valor3))
+        }
+        else if (valor2 > valor3 && valor1 > valor3 ){
+         alert( parseInt(valor2) + parseInt(valor1))
+        }
+
+        else if (valor3 > valor2 && valor1 > valor2 ){
+         alert( parseInt(valor3) + parseInt(valor1))
+        }
+       else if (valor3 > valor1 && valor2 > valor1 ){
+         alert( parseInt(valor3) + parseInt(valor2))
+        }
+
+    </script>
+
+</body>
+
+</html>

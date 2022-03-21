@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*7. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)**/
+
+
+       var valor1 = parseInt(prompt("Insira um valor"));
+
+       var valor2 = parseInt(prompt("Insira outro valor"));
+
+       var valor3 = parseInt(prompt("Insira outro novamente valor"));
+
+       var valor4 = parseInt(prompt("Insira mais um valor"));
+
+        if (valor2 == valor1) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        } else if (valor2 == valor3) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        } else if (valor1 == valor3) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        } else if (valor1 == valor4) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        } else if (valor4 == valor2) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        } else if (valor4 == valor3) {
+            alert("Os valores não podem ser iguais. Reinicie a pagina");
+        }
+
+        alert("O primeiro numero informado foi: " + valor1 )
+        alert("O ultimo numero informado foi: " + valor4 )
+
+
+        if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4){
+            alert("O maior informado foi: " + valor1 )
+        }
+        else if (valor2 > valor1 && valor2 > valor3 && valor2 > valor4) {
+            alert("O maior informado foi: " + valor2 )
+        }
+        else if (valor3 > valor1 && valor3 > valor2 && valor3 > valor4) {
+            alert("O maior informado foi: " + valor3 )
+        }
+        else if (valor4 > valor1 && valor4 > valor2 && valor4 > valor3) {
+            alert("O maior informado foi: " + valor4 )
+        }
+    </script>
+
+</body>
+
+</html>

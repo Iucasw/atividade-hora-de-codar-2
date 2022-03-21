@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+/*12 - A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento.**/
+
+        var tamanho_pista = parseInt(prompt("Olá! hoje vamos calcular o valor mínimo de litros necessários para um carro da mercendes percorrer até o primeiro reabastecimento de uma pista! digite o comprimento da pista em metros: "));
+        var voltas = parseInt(prompt("digite o numero de voltas que terá a pista:"));
+        var reabastecimentos = parseInt(prompt("digite em quantas vezes que o carro irá reabastecer: "));
+        var consumo = parseInt(prompt("digite um numero em conbustivel consumido por km em Litros:"));
+
+        var voltas_parada = voltas / reabastecimentos;
+        var media_consumo = (voltas_parada * tamanho_pista) / reabastecimentos;
+
+
+       alert("O valor mínimo de litros necessários para percorrer até o primeiro reabastecimento é de " + media_consumo + "L");
+   
+
+    </script>
+
+</body>
+
+</html>

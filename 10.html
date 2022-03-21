@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+/*10. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"**/
+
+       var valor1 = parseInt(prompt("Insira o primeiro valor"));
+
+       var valor2 = parseInt(prompt("Insira o segundo valor"));
+
+       var valor3 = parseInt(prompt("Insira o terceiro valor"));
+
+       var valor4 = parseInt(prompt("Insira o quarto valor"));
+
+        var media = 0;
+      
+        if(valor1 < 0 || valor1 > 10 || valor2 < 0 || valor2 > 10 || valor3 < 0 || valor3 > 10 || valor4 < 0 || valor4 > 10){
+            alert("Os valores não podem ser menor que 0 e maior que 10")
+        }   
+
+        alert ("A media das notas foi: " + (valor1 + valor2 + valor3 + valor4)  / 4)
+    
+    </script>
+
+</body>
+
+</html>

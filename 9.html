@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+/*9.Faça um programa que leia 6 números que o usuário vai informar.Todos os números lidos com valor inferior a 72 devem ser somados.Escreva o valor final da soma efetuada e também todos valores que o usuário informou.**/
+
+       var valor1 = parseInt(prompt("Insira o primeiro valor"));
+
+       var valor2 = parseInt(prompt("Insira o segundo valor"));
+
+       var valor3 = parseInt(prompt("Insira o terceiro valor"));
+
+       var valor4 = parseInt(prompt("Insira o quarto valor"));
+       
+       var valor5 = parseInt(prompt("Insira o quinto valor"));
+
+       var valor6 = parseInt(prompt("Insira o sexto valor"));
+
+       var valores = [];
+
+       var soma = 0;
+
+       if (valor1 < 72) {
+  
+             soma += valor1     
+           console.log(soma)
+       }
+
+       if (valor2 < 72) {
+        soma += valor2        
+           console.log(soma)
+       }
+
+       if (valor3 < 72) {
+        soma += valor3        
+           console.log(soma)
+       }
+
+       if (valor4 < 72) {
+        soma += valor4     
+           console.log(soma)
+       }
+      
+       if (valor5 < 72) {
+        soma += valor5    
+           console.log(soma)
+       }
+
+       if (valor6 < 72) {
+        soma +=  valor6
+           console.log(soma)
+       }
+      
+      alert("Os valores colcados foram: " + valor1 + ", " + valor2 + ", " + valor3 + ", " + valor4 + ", " + valor5 + ", " + valor6)
+
+      alert("A soma dos valores menores que 72 deu: " + soma)
+      
+    </script>
+
+</body>
+
+</html>
